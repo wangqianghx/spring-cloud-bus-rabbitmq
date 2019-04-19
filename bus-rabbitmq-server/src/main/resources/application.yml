@@ -2,9 +2,13 @@ spring:
   application:
     name: rabbitmq-receiver
   rabbitmq:
-    host: localhost
+    host: 192.168.56.101
     port: 5672
-    username:
-    password:
+    username: admin
+    password: admin123
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 3
 server:
   port: 2000

@@ -2,9 +2,11 @@ spring:
   application:
     name: rabbitmq-sender
   rabbitmq:
-    host: localhost
+    host: 192.168.56.101
     port: 5672
-    username:
-    password:
+    username: admin
+    password: admin123
+    publisher-confirms: true
+    publisher-returns: true
 server:
   port: 2001
